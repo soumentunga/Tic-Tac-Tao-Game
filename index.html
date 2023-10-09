@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <h4>Made By Soumen</h4>
     <style>
         body {
             display: flex;
@@ -33,7 +34,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #ccc;
+            border: 1px solid #922525;
             cursor: pointer;
         }
 
@@ -52,12 +53,12 @@
         }
 
         #reset:hover {
-            background-color: #0056b3;
+            background-color: #20bc20;
         }
     </style>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <h1>Tic Tac Toe Game</h1>
     <div id="message">Player X's turn</div>
     <div class="board" id="board">
         <div class="cell" onclick="makeMove(this)"></div>
@@ -117,7 +118,7 @@
             const cells = document.querySelectorAll('.cell');
             for (const cell of cells) {
                 cell.innerText = '';
-                cell.style.backgroundColor = 'white';
+                cell.style.backgroundColor = 'lightyellow';
             }
             document.getElementById('message').innerText = "Player X's turn";
             currentPlayer = 'X';
